@@ -3,6 +3,7 @@ import H2 from "../atoms/H2";
 import H3 from "../atoms/H3";
 import P from "../atoms/P";
 import CardWithImage1 from "../molecules/CardWithImage1";
+import SectionHeader from "../molecules/SectionHeader";
 
 const DUMMY_DATA = [
   {
@@ -25,11 +26,11 @@ const DUMMY_DATA = [
 export default function PopularDestinationSection() {
   return (
     <div className="w-full bg-white p-[80px] flex flex-col gap-[24px]">
-      <H2 className="text-[#48847F] text-center">Popular Destinations</H2>
-      <P className="text-gray-400 text-center">
-        Discover the most loved destinations across Indonesia's beautiful
-        archipelago
-      </P>
+      <SectionHeader
+        title="Popular Destinations"
+        description="Discover the most loved destinations across Indonesia's beautiful
+        archipelago"
+      />
       <div className="flex p-[24px] mx-[-80px] gap-[16px]">
         {DUMMY_DATA.map((item, index) => {
           return (
