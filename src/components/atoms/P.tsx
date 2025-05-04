@@ -16,5 +16,5 @@ export default function P({
   className,
   bold = "font-normal",
 }: PProps) {
-  return <h1 className={`text-[24px] ${bold} ${className}`}>{children}</h1>;
+  return <h1 className={`text-[16px] ${bold} ${className}`}>{children}</h1>;
 }
