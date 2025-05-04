@@ -1,4 +1,4 @@
-LINK FIGMA : https://www.figma.com/files/team/1443974102890118514/recents-and-sharing?fuid=1394320227248991089
+LINK FIGMA : https://www.figma.com/design/p7nLwrGDNcXA9aRPTOw1Wq?fuid=1394320227248991089&prev-plan-id=1443974102890118514&prev-plan-type=team&prev-selected-view=recentsAndSharing
 
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
