@@ -10,7 +10,7 @@ export default function Footer() {
           WisataGas
         </H3>
         <P className="font-bold">
-          Discover Indonesia's hidden treasures with our curated travel
+          Discover Indonesia&apos;s hidden treasures with our curated travel
           experiences.
         </P>
       </div>

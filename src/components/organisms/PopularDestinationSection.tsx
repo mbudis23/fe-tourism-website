@@ -1,7 +1,3 @@
-import Image from "next/image";
-import H2 from "../atoms/H2";
-import H3 from "../atoms/H3";
-import P from "../atoms/P";
 import CardWithImage1 from "../molecules/CardWithImage1";
 import SectionHeader from "../molecules/SectionHeader";
 

@@ -19,6 +19,9 @@ export default function HeroSectionSearch() {
           Find Destination
         </Button>
       </div>
+      <div className="flex">
+        <InputText />
+      </div>
     </div>
   );
 }
