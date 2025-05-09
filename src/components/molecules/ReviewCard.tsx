@@ -15,7 +15,7 @@ export default function ReviewCard({
   reviewer_job,
 }: ReviewCardProps) {
   return (
-    <div className="aspect-[4/5] rounded-[8px] shadow-md flex flex-col p-[16px] h-full justify-between">
+    <div className="rounded-[8px] shadow-md flex flex-col p-[16px] h-full justify-between bg-white gap-[12px]">
       <P>&quot;{review}&quot;</P>
       <div className="flex gap-[12px]">
         <Image
@@ -23,7 +23,7 @@ export default function ReviewCard({
           src={reviwer_image ? reviwer_image : "/img/bgImage-heroSection-1.png"}
           width={50}
           height={50}
-          className="rounded-full aspect-square"
+          className="rounded-full aspect-square object-cover"
         />
         <div className="flex flex-col">
           <P className="font-bold text-black">{reviewer_name}</P>

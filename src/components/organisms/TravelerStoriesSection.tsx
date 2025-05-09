@@ -46,7 +46,7 @@ export default function TravelerStoriesSection() {
                 review={item.review}
                 reviewer_name={item.reviewer_name}
                 reviewer_job={item.reviewer_job}
-                reviwer_image={item.reviwer_image}
+                reviwer_image={"/img/profPic.jpeg"}
               />
             </div>
           );
