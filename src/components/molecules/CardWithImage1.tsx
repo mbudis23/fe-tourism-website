@@ -1,6 +1,7 @@
 import Image from "next/image";
 import H3 from "../atoms/H3";
 import P from "../atoms/P";
+import renderStarts from "./renderStart";
 
 type CardWithImage1Props = {
   src?: string;
@@ -19,14 +20,13 @@ export default function CardWithImage1({
   location,
   rating,
   description = "",
-}: //   key,
-CardWithImage1Props) {
+}: CardWithImage1Props) {
   const truncateDescription = (desc: string, charLimit: number) => {
     if (desc.length <= charLimit) return desc;
     return desc.slice(0, charLimit) + "...";
   };
   return (
-    <div className="aspect-[32/40] rounded-[8px] shadow-md grid grid-rows-2 max-h-[400px] overflow-hidden">
+    <div className="aspect-[32/48] rounded-[8px] shadow-md grid grid-rows-2 h-full ">
       <Image
         alt={alt}
         src={src ? src : "/img/bgImage-heroSection-1.png"}
@@ -38,7 +38,7 @@ CardWithImage1Props) {
         <H3 bold="font-bold">{title}</H3>
         <div className="flex justify-between w-full text-[12px]">
           <p className="text-gray-400">{location}</p>
-          <div>{rating}</div>
+          <div className="text-[#F59E0B]">{renderStarts(rating)}</div>
         </div>
         <P className="text-gray-600 text-justify ">
           {truncateDescription(description, 75)}
