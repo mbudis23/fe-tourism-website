@@ -7,7 +7,7 @@ type CardWithImage1Props = {
   alt?: string;
   title?: string;
   location?: string;
-  rating?: string;
+  rating?: number;
   description?: string;
   //   key?: any;
 };
@@ -18,9 +18,13 @@ export default function CardWithImage1({
   title,
   location,
   rating,
-  description,
+  description = "",
 }: //   key,
 CardWithImage1Props) {
+  const truncateDescription = (desc: string, charLimit: number) => {
+    if (desc.length <= charLimit) return desc;
+    return desc.slice(0, charLimit) + "...";
+  };
   return (
     <div className="aspect-[32/40] rounded-[8px] shadow-md grid grid-rows-2 max-h-[400px] overflow-hidden">
       <Image
@@ -36,7 +40,9 @@ CardWithImage1Props) {
           <p className="text-gray-400">{location}</p>
           <div>{rating}</div>
         </div>
-        <P className="text-gray-600">{description}</P>
+        <P className="text-gray-600 text-justify ">
+          {truncateDescription(description, 75)}
+        </P>
       </div>
     </div>
   );
