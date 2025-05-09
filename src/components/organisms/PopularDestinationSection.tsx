@@ -3,24 +3,6 @@ import { useEffect, useState } from "react";
 import CardWithImage1 from "../molecules/CardWithImage1";
 import SectionHeader from "../molecules/SectionHeader";
 
-const DUMMY_DATA = [
-  {
-    title: "Tegallang Rice Terrace",
-    location: "Bali",
-    rating: "4.8",
-    description:
-      "Experience the breathtaking beauty of Tegallang Rice Terrace, a UNESCO World Heritage site, where lush green rice paddies cascade down the hillsides, creating a stunning landscape that showcases Bali's agricultural heritage.",
-  },
-  {
-    title: "Tegallang Rice Terrace",
-    location: "Bali",
-    rating: "5.0",
-    description:
-      "Experience the breathtaking beauty of Tegallang Rice Terrace, a UNESCO World Heritage site, where lush green rice paddies cascade down the hillsides, creating a stunning landscape that showcases Bali's agricultural heritage.",
-    src: "/img/bgImage-heroSection-1.png",
-  },
-];
-
 interface PopDestInterface {
   place_id: number;
   place_name: string;
