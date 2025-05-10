@@ -38,7 +38,7 @@ export default function TravelerStoriesSection() {
         title="Traveler Stories"
         description="Hear what our travelers have to say about their Indonesian adventures"
       />
-      <div className="flex p-[24px] mx-[-80px] gap-[16px] overflow-hidden max-sm:flex-col">
+      <div className="flex p-[24px] mx-[-80px] gap-[16px] overflow-hidden max-md:flex-col">
         {DUMMY_DATA.map((item, index) => {
           return (
             <div key={index}>

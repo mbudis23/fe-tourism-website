@@ -123,7 +123,7 @@ export default function SearchPage() {
 
           {listDest.map((item, index) => (
             <div
-              className="p-[12px] rounded-[16px] flex flex-row bg-white shadow gap-[12px] max-sm:flex-col"
+              className="p-[12px] rounded-[16px] flex flex-row bg-white shadow gap-[12px] max-md:flex-col"
               key={index}
             >
               <Image
@@ -131,11 +131,11 @@ export default function SearchPage() {
                 alt=""
                 width={500}
                 height={500}
-                className="aspect-square w-[25%] object-cover max-sm:w-full"
+                className="aspect-square w-[25%] object-cover max-md:w-full"
               />
               <div className="w-full flex flex-col gap-[12px]">
                 <H3 bold="font-bold">{item.place_name}</H3>
-                <div className="flex justify-between max-sm:flex-col">
+                <div className="flex justify-between max-md:flex-col">
                   <div className="flex gap-[8px]">
                     <P className="flex flex-col justify-center self-center h-full">
                       {typeof item.rating === "number"
