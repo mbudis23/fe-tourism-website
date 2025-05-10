@@ -37,7 +37,7 @@ export default function SearchPage() {
 
     setIsLoading(true);
 
-    fetch(`http://localhost:3001/api/ai/searchAI`, {
+    fetch(`be-tourism-website.vercel.app/api/ai/searchAI`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

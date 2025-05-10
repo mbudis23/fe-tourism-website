@@ -12,9 +12,11 @@ interface PopDestInterface {
 }
 
 export default function PopularDestinationSection() {
+  const [isLoading, setIsLoading] = useState(false);
   const [popDestData, setPopDestData] = useState<PopDestInterface[]>([]);
   useEffect(() => {
-    fetch("http://localhost:3001/api/places/get-pop-dest")
+    setIsLoading(true);
+    fetch("https://be-tourism-website.vercel.app/api/places/get-pop-dest")
       .then((res) => {
         if (!res.ok) throw new Error("Fetch failed");
         return res.json();
@@ -23,11 +25,19 @@ export default function PopularDestinationSection() {
         console.log("Data diterima:", data.data);
         setPopDestData(data.data);
       })
-      .catch((err) => console.error("Gagal fetch:", err));
+      .catch((err) => console.error("Gagal fetch:", err))
+      .finally(() => {
+        setIsLoading(false);
+      });
   }, []);
 
   return (
     <div className="w-full bg-white p-[80px] flex flex-col gap-[24px]">
+      {isLoading && (
+        <div className="fixed inset-0 bg-transparent flex items-center justify-center z-50 animate-fadeIn">
+          <div className="w-12 h-12 border-4 border-t-transparent border-[#0D9488] rounded-full animate-spin" />
+        </div>
+      )}
       <SectionHeader
         title="Popular Destinations"
         description="Discover the most loved destinations across Indonesia's beautiful
