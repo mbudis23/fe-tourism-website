@@ -41,7 +41,7 @@ export default function InputText({
       placeholder={placeholder}
       value={value}
       onChange={onChange}
-      className={`w-full outline-none p-[12px] border-[#0D9488] border-[1px] transition-all  duration-100 ease-in rounded-[4px] ${className}`}
+      className={`w-full outline-none p-[12px] border-[#DDDDDD] focus:border-[#0D9488] border-[1px] transition-all  duration-100 ease-in rounded-[4px] ${className}`}
     />
   );
 }
