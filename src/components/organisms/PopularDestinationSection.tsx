@@ -16,7 +16,9 @@ export default function PopularDestinationSection() {
   const [popDestData, setPopDestData] = useState<PopDestInterface[]>([]);
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://be-tourism-website.vercel.app/api/places/get-pop-dest")
+    fetch(
+      "https://be-tourism-website-git-main-mbudis23s-projects.vercel.app/api/places/get-pop-dest"
+    )
       .then((res) => {
         if (!res.ok) throw new Error("Fetch failed");
         return res.json();
