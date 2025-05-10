@@ -45,7 +45,7 @@ export default function PopularDestinationSection() {
         description="Discover the most loved destinations across Indonesia's beautiful
         archipelago"
       />
-      <div className="flex p-[24px] mx-[-80px] gap-[16px] max-sm:flex-col max-sm:p-[48px]">
+      <div className="flex p-[24px] mx-[-80px] gap-[16px] max-md:flex-col max-md:p-[48px]">
         {popDestData.map((item) => {
           return (
             <div key={item.place_id}>
