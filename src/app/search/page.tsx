@@ -123,7 +123,7 @@ export default function SearchPage() {
 
           {listDest.map((item, index) => (
             <div
-              className="p-[12px] rounded-[16px] flex flex-row bg-white shadow gap-[12px]"
+              className="p-[12px] rounded-[16px] flex flex-row bg-white shadow gap-[12px] max-sm:flex-col"
               key={index}
             >
               <Image
@@ -131,11 +131,11 @@ export default function SearchPage() {
                 alt=""
                 width={500}
                 height={500}
-                className="aspect-square w-[25%] object-cover"
+                className="aspect-square w-[25%] object-cover max-sm:w-full"
               />
               <div className="w-full flex flex-col gap-[12px]">
                 <H3 bold="font-bold">{item.place_name}</H3>
-                <div className="flex justify-between">
+                <div className="flex justify-between max-sm:flex-col">
                   <div className="flex gap-[8px]">
                     <P className="flex flex-col justify-center self-center h-full">
                       {typeof item.rating === "number"
@@ -154,7 +154,7 @@ export default function SearchPage() {
                   </div>
                   <Button
                     onClick={() => {
-                      const nomor = "6281234567890"; // gunakan format internasional, tanpa +
+                      const nomor = "6285102905071";
                       const pesan = `Halo, saya tertarik dengan destinasi ${item.place_name}`;
                       const url = `https://wa.me/${nomor}/?text=${encodeURIComponent(
                         pesan
