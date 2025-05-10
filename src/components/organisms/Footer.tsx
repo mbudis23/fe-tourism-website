@@ -4,8 +4,8 @@ import P from "../atoms/P";
 
 export default function Footer() {
   return (
-    <div className="grid grid-cols-4 p-[80px] bg-[#1E293B] gap-[12px]">
-      <div className="flex flex-col gap-[24px]">
+    <div className="grid grid-cols-4 p-[80px] bg-[#1E293B] gap-[24px] max-sm:grid-cols-1">
+      <div className="flex flex-col gap-[24px] max-sm:text-center">
         <H3 bold="font-black" className="text-[#F59E0B]">
           WisataGas
         </H3>
@@ -14,7 +14,7 @@ export default function Footer() {
           experiences.
         </P>
       </div>
-      <div className="flex flex-col gap-[24px]">
+      <div className="flex flex-col gap-[24px] max-sm:text-center">
         <H3 bold="font-black" className="text-[#F59E0B]">
           Explore
         </H3>
@@ -33,7 +33,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-[24px]">
+      <div className="flex flex-col gap-[24px] max-sm:text-center">
         <H3 bold="font-black" className="text-[#F59E0B]">
           Company
         </H3>
@@ -52,7 +52,7 @@ export default function Footer() {
           </Link>
         </div>
       </div>
-      <div className="flex flex-col gap-[24px]">
+      <div className="flex flex-col gap-[24px] max-sm:text-center">
         <H3 bold="font-black" className="text-[#F59E0B]">
           Support
         </H3>
