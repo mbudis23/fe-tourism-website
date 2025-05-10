@@ -37,13 +37,16 @@ export default function SearchPage() {
 
     setIsLoading(true);
 
-    fetch(`https://be-tourism-website.vercel.app/api/ai/searchAI`, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ query }),
-    })
+    fetch(
+      `https://be-tourism-website-git-main-mbudis23s-projects.vercel.app/api/ai/searchAI`,
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ query }),
+      }
+    )
       .then((res) => {
         if (!res.ok) throw new Error("Fetch failed");
         return res.json();
